@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IRecipe } from '../models/recipe';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-recipes',
@@ -7,13 +6,9 @@ import { IRecipe } from '../models/recipe';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  recipe : IRecipe;
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
-
-  onRecipeDisplay(recipeData){
-    this.recipe = recipeData;
-  }
+  
 }

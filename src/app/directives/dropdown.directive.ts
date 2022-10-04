@@ -7,7 +7,7 @@ import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } f
 })
 export class DropdownDirective implements OnInit {
   @HostBinding('class.show') isOpened = false;
-  @HostListener('document:click', ['$event']) toggleOpen(event: Event) {
+  @HostListener('click', ['$event']) toggleOpen(event: Event) {
     this.isOpened = this.elementRf.nativeElement.contains(event.target) ? !this.isOpened : false;
   }
   constructor(private elementRf: ElementRef,private renderer: Renderer2) { }

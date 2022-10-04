@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DirectivesModule } from './directives/directives.module';
 import { DropdownDirective } from './directives/dropdown.directive';
@@ -18,7 +19,8 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     RecipesModule,
     ShoppingListModule,
     FormsModule,
-    DirectivesModule
+    DirectivesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

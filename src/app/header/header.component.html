@@ -9,9 +9,8 @@
           <li class="nav-item">
             <a 
               class="nav-link"
-              [ngClass]="{active: currentSite == 'Recipes'}"
-              (click)="onRecipesClick()"
-              href="#"
+              routerLink="/recipes"
+              routerLinkActive="active"
             >
               Recipes
             </a>
@@ -19,9 +18,8 @@
           <li class="nav-item">
             <a 
               class="nav-link"
-              [ngClass]="{active: currentSite == 'Shopping List'}"
-              (click)="onShoppingListClick()" 
-              href="#"
+              routerLink="/shopping-list"
+              routerLinkActive="active"
             >
               Shopping List
             </a>
@@ -29,7 +27,7 @@
         </ul>
         <div class="d-flex">
             <li class="nav-item dropdown" appDropdown #r="appDropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Manage
                 </a>
                 <ul class="dropdown-menu dropdown-menu-start" [ngClass]="{'show': r.isOpened}" aria-labelledby="navbarDropdown">
